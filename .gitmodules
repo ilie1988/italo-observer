@@ -1,0 +1,3 @@
+[submodule "pyitalomq"]
+	path = pyitalomq
+	url = https://github.com/ilie1988/pyitalomq

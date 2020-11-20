@@ -1,5 +1,5 @@
 mainnet.sock
 testnet.sock
 devnet.sock
-pylokimq.cpython-*.so
+pyitalomq.cpython-*.so
 __pycache__
