@@ -58,7 +58,7 @@
             {%else%}
                 {% import 'include/tx_fee.html' as fee %}
                 {{fee.display(tx)}}
-                ({{(tx.info.rct_signatures.txnFee * 1000 / tx.size) | italo(tag=false, decimals=6)}})
+                ({{(tx.info.rct_signatures.txnFee * 1000 / tx.size) | loki(tag=false, decimals=6)}})
             {%endif%}
         </span>
         <span title="{{tx.size}} bytes"><label>TX Size:</label> {{tx.size|si}}B</span>
@@ -186,7 +186,7 @@ This tx does not includes a vote from this testing service node (only 7 votes ar
     {%if tx.info.vout%}
         <h2>Outputs</h2>
         <h4 class="Subtitle">{{tx.info.vout|length}} output(s) for total of
-            {{tx.info.vout | sum(attribute='amount') | italo(zero='<span title="Regular ITALO tx amounts are private">???</span>') | safe}}</h4>
+            {{tx.info.vout | sum(attribute='amount') | loki(zero='<span title="Regular ITALO tx amounts are private">???</span>') | safe}}</h4>
         <div class="TitleDivider"></div>
         <div class="tx-outputs">
             <table class="Table">
@@ -202,7 +202,7 @@ This tx does not includes a vote from this testing service node (only 7 votes ar
                     {%for out in tx.info.vout%}
                         <tr>
                             <td><label>{{loop.index0}}:</label> {{out.target.key}}</td>
-                            <td>{{out.amount | italo(zero='?')}}</td>
+                            <td>{{out.amount | loki(zero='?')}}</td>
                             <td>{%if 'output_indices' in tx%}{{tx.output_indices[loop.index0]}}{# FIXME: of {{num_outputs}}#}{%endif%}</td>
                         </tr>
                     {%endfor%}
@@ -521,7 +521,7 @@ This tx does not includes a vote from this testing service node (only 7 votes ar
 
       <h2>Inputs</h2>
       <h4 class="Subtitle">{{tx.info.vin|length}} input(s) for total of
-        {{tx.info.vin | sum(attribute='key.amount') | italo(zero='<span title="Regular ITALO tx amounts are private">???</span>') | safe}}</h4>
+        {{tx.info.vin | sum(attribute='key.amount') | loki(zero='<span title="Regular ITALO tx amounts are private">???</span>') | safe}}</h4>
       <div class="TitleDivider"></div>
 
       {#FIXME#}
@@ -555,7 +555,7 @@ This tx does not includes a vote from this testing service node (only 7 votes ar
                   {%endif%}
                 {%endif%}
               </td>
-              <td style="text-align: right">Amount: {{inp.key.amount | italo(zero='?')}}</td>
+              <td style="text-align: right">Amount: {{inp.key.amount | loki(zero='?')}}</td>
             </tr>
             {%if config.enable_mixins_details%}
               <tr class="TableHeader">
