@@ -27,31 +27,6 @@
 
             {% if info.mainnet and config.italonet_mainnet_url %}
                 <span><a href="{{config.italonet_mainnet_url}}">Connect via Italonet</a></span>
-            {% elif info.testnet and config.italonet_testnet_url %}
-                <span><a href="{{config.italonet_testnet_url}}">Connect via Italonet</a></span>
-            {% elif info.devnet and config.italonet_devnet_url %}
-                <span><a href="{{config.italonet_devnet_url}}">Connect via Italonet</a></span>
-            {% endif %}
-
-            {% if config.testnet_url and not info.testnet %}
-                <span><a href="{{config.testnet_url}}">Go to testnet explorer</a>
-                    {%if config.italonet_testnet_url%}(<a href="{{config.italonet_testnet_url}}">via Italonet</a>){%endif%}
-                </span>
-            {% endif %}
-            {% if config.devnet_url and not info.devnet %}
-                <span><a href="{{config.devnet_url}}">Go to devnet explorer</a>
-                    {%if config.italonet_devnet_url%}(<a href="{{config.italonet_devnet_url}}">via Italonet</a>){%endif%}
-                </span>
-            {% endif %}
-            {% if config.mainnet_url and not info.mainnet %}
-                <span><a href="{{config.mainnet_url}}">Go to mainnet explorer</a>
-                    {%if config.italonet_mainnet_url%}(<a href="{{config.italonet_mainnet_url}}">via Italonet</a>){%endif%}
-                </span>
-            {% endif %}
-            {% if info.testnet %}
-                <span>This is <span style="color:#ff6b62; font-weight: bold">TESTNET</span> blockchain</span>
-            {% elif info.devnet %}
-                <span>This is <span style="color:#af5bd2; font-weight: bold">DEVNET</span> blockchain</span>
             {% endif %}
         </div>
 

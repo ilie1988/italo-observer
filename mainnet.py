@@ -1,3 +1,3 @@
 from observer import app, config
 
-config.lokid_rpc = 'ipc://lokid/mainnet.sock'
+config.lokid_rpc = 'ipc:///home/user/italo-observer/mainnet.sock'

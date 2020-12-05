@@ -115,7 +115,7 @@ def format_si(value):
 @app.template_filter('loki')
 def format_loki(atomic, tag=True, fixed=False, decimals=9, zero=None):
     """Formats an atomic current value as a human currency value.
-    tag - if False then don't append " LOKI"
+    tag - if False then don't append " ITALO"
     fixed - if True then don't strip insignificant trailing 0's and '.'
     decimals - at how many decimal we should round; the default is full precision
     fixed - if specified, replace 0 with this string
@@ -127,7 +127,7 @@ def format_loki(atomic, tag=True, fixed=False, decimals=9, zero=None):
         if not fixed and decimals > 0:
             disp = disp.rstrip('0').rstrip('.')
     if tag:
-        disp += ' LOKI'
+        disp += ' ITALO'
     return disp
 
 # For some inexplicable reason some hex fields are provided as array of byte integer values rather
