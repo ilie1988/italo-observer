@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 p>label, span>label, h3>label, h4>label, td>label, .info-item>label {
-    color: #30a532;
+    color: #1ac6ff;
 }
 label.warning {
     color: red;
@@ -92,7 +92,7 @@ label.warning {
 
 .PaginationControl,
 .PageButton {
-    background-color: #008522;
+    background-color: #006699;
     min-height: 1.5em;
     padding: 5px;
     padding-top: 8px;
@@ -111,14 +111,14 @@ label.warning {
 .PaginationControl select {
     font-size: inherit;
     background-color: #1a1a1a;
-    color: #008522;
+    color: #006699;
     border: none;
     padding: 0;
     margin: 0;
 }
 
 .PageButton:hover {
-    background-color: #006a1b;
+    background-color: #00aaff;
 }
 .PageButton.disabled:hover {
     background-color: #707070;
@@ -145,19 +145,19 @@ label.warning {
 table thead tr,
 .TableHeader {
     font-weight: bold;
-    background-color: #008522;
+    background-color: #006699;
 }
 
 .TitleUnderliner {
     height: 2px;
     width: 100%;
-    background-color: #008522;
+    background-color: #006699;
     margin-bottom: 1em;
 }
 .TitleDivider {
     height: 2px;
     width: 100%;
-    background-color: #008522;
+    background-color: #006699;
     margin: 1em 0;
 }
 
@@ -199,7 +199,7 @@ a:link, a:visited {
 
 a:hover {
     text-decoration: underline;
-    color: #78be20;
+    color: #00aaff;
 }
 
 form {
@@ -218,7 +218,7 @@ form {
 
 .top-search input[type="text"]:focus,
 .top-search input[type="text"].focus {
-    border: solid 1px #008522;
+    border: solid 1px #006699;
 }
 h1, h2, h3, h4, h5, h6 { color: white; }
 
@@ -256,11 +256,11 @@ h1, h2, h3, h4, h5, h6 { color: white; }
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    border-top: 2px solid #008522;
+    border-top: 2px solid #006699;
 }
 
 [type=radio]:checked ~ label {
-    background: #008522 ;
+    background: #006699 ;
     z-index: 2;
 }
 
@@ -326,7 +326,7 @@ div.quorums {
 }
 
 div.quorums>div {
-    border: 2px solid #008522;
+    border: 2px solid #006699;
     border-radius: 5px;
     padding: 0;
     flex-grow: 1;
@@ -357,7 +357,7 @@ div.quorums>div>.workers {
     /*space-between;*/
 }
 .quorums.obligations .workers, .quorums.pulse .validators, .quorums.blink .validators.q1 {
-    border-top: 2px solid #008522;
+    border-top: 2px solid #006699;
 }
 .quorums .workers label, .quorums .validators label {
     font-weight: bold;
@@ -384,26 +384,26 @@ div.quorums>div>.workers {
     color: white;
 }
 .quorums .sn:hover {
-    background-color: #006a1b;
-    border-color: #78be20;
-    color: #78be20;
+    background-color: #006699;
+    border-color: #006699;
+    color: #006699;
 }
 .quorums.pulse .workers .sn {
     flex-grow: 1;
     max-width: 150px;
 }
 div.quorums h2 {
-    background-color: #008522;
+    background-color: #006699;
     color: white;
     font-size: 14px;
     font-weight: bold;
     margin: 0;
 }
 div.quorums>div.now h2 {
-    background-color: #78be20;
+    background-color: #006699;
 }
 div.quorums>div.now, div.quorums.obligations>div.now .workers, div.quorums.blink>div.now {
-    border-color: #78be20;
+    border-color: #006699;
 }
 div.quorums h5 {
     margin: 0;
@@ -416,18 +416,18 @@ td.quorum-pubkey span {
 }
 
 div.tx-state-change-quorum div.workers {
-    border-top: 2px solid #008522;
+    border-top: 2px solid #006699;
 }
 div.tx-state-change-quorum div.validators .sn.voted,
 div.tx-state-change-quorum div.workers .sn.testee {
-    background-color: #006a1b;
-    border-color: #78be20;
-    color: #78be20;
+    background-color: #006699;
+    border-color: #006699;
+    color: #006699;
 }
 .quorums div.tx-state-change-quorum .sn:hover {
-    background-color: #78be20 !important;
-    border-color: #006a1b !important;
-    color: #006a1b !important;
+    background-color: #006699 !important;
+    border-color: #006699 !important;
+    color: #006699 !important;
 }
 
 /*div.tx-state-change-quorum>div>.sn {
@@ -437,10 +437,10 @@ div.tx-state-change-quorum div.workers .sn.testee {
 
 th.subheader {
     text-align: left;
-    border-bottom: 2px solid #008522;
+    border-bottom: 2px solid #006699;
 }
 
-td span.checkpoint-signed { color: #008522; }
+td span.checkpoint-signed { color: #006699; }
 td span.checkpoint-not-signed { color: #c50022; }
 
 .omg {
@@ -475,7 +475,7 @@ span.icon {
     tab-size: 4;
     -o-tab-size: 4;
     -moz-tab-size: 4;
-    border: 1px solid #008522;
+    border: 1px solid #006699;
     padding: 10px;
 }
 
